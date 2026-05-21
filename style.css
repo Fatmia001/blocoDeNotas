@@ -92,6 +92,7 @@ button:focus {
     line-height: 1.5;
     box-sizing: border-box; /* Garante que o padding não aumente a largura total */
     resize: vertical; /* Permite que o usuário redimensione a altura */
+    background-color: rgb(251, 230, 192);
 }
 
 #blocoDeNotas:focus {
