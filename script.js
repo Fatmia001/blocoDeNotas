@@ -20,8 +20,9 @@ function saveNote(content) {
 function initializeNotes() {
     const blocoDeNotas = document.getElementById('blocoDeNotas');
     const botaoLimpar = document.getElementById('limparNota');
+    const botaoSalvar = document.getElementById('salvarNota');
 
-    if (!blocoDeNotas || !botaoLimpar) {
+    if (!blocoDeNotas || !botaoLimpar || !botaoSalvar) {
         console.error('Elementos necessários não foram encontrados no DOM.');
         return;
     }
@@ -30,6 +31,11 @@ function initializeNotes() {
 
     blocoDeNotas.addEventListener('input', event => {
         saveNote(event.target.value);
+    });
+
+    botaoSalvar.addEventListener('click', () => {
+        saveNote(blocoDeNotas.value);
+        alert('Notas salvas com sucesso!');
     });
 
     botaoLimpar.addEventListener('click', () => {

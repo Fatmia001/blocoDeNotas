@@ -10,13 +10,13 @@ font-family: tapete;
 }
 
 :root {
-    --bg: #071b1b;
-    --panel: #0f2b2b;
-    --text: #e6f6f5;
-    --muted: #9fb8b7;
-    --primary: #2ec4b6;
+    --bg: #704a4a;
+    --panel: #2b0f15;
+    --text: #efd8e1;
+    --muted: #b89faf;
+    --primary: #d26767;
     --accent: #ffb703;
-    --border: rgba(230,246,245,0.08);
+    --border: rgba(246, 230, 236, 0.08);
 }
 
 body {
@@ -50,6 +50,7 @@ h1 {
 p {
     color: var(--muted);
     margin-bottom: 20px;
+    font-family: tapete;
 }
 
 .controls {
@@ -68,6 +69,7 @@ button {
     font-size: 20px;
     font-family: baile;
     transition: background-color 0.2s ease;
+    margin-left: 10px;
 }
 
 button:hover {
@@ -75,7 +77,7 @@ button:hover {
 }
 
 button:focus {
-    outline: 2px solid rgba(46,196,182,0.35);
+    outline: 2px solid rgba(196, 46, 121, 0.35);
     outline-offset: 2px;
 }
 
@@ -85,7 +87,7 @@ button:focus {
     min-height: 240px;
     padding: 15px;
     border: 1px solid var(--border);
-    color:#133037;
+    color:#371321;
     border-radius: 4px;
     font-size: 20px;
     font-family: "baile";
@@ -98,5 +100,5 @@ button:focus {
 #blocoDeNotas:focus {
     outline: none;
     border-color: var(--primary);
-    box-shadow: 0 0 8px rgba(46,196,182,0.18);
+    box-shadow: 0 0 8px rgba(196, 46, 111, 0.18);
 }
